@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout   xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sslteam.kritagnya.attendance.MainActivity"
+    >
+
+
+    <TextView
+        android:text="0"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/acount"
+        android:textSize="30sp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:text="1"
+        android:layout_width="170sp"
+        android:id="@+id/textView"
+        android:layout_height="170sp"
+        android:fontFamily="sans-serif"
+        android:textSize="80sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/pcount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+
+        />
+
+    <TextView
+        android:text="0"
+        android:layout_width="50dp"
+        android:layout_height="50sp"
+        android:id="@+id/pcount"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/acount"
+        android:layout_alignBottom="@+id/acount"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:text="go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:text="Absent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/but1"
+        android:elevation="0dp"
+        android:onClick="noAbs"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button" />
+
+    <Button
+        android:text="UNDO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/undobtn"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignTop="@+id/but1"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <Button
+        android:text="present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="yoPres"
+        android:layout_marginBottom="37dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignRight="@+id/pcount"
+        android:layout_alignEnd="@+id/pcount" />
+
+
+</RelativeLayout>
